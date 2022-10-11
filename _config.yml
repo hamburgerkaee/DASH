@@ -301,7 +301,7 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
-
+  - jekyll-remote-theme # added for testing on github pages by kaede
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
