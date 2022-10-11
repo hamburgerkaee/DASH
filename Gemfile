@@ -2,8 +2,6 @@ source "https://rubygems.org"
 gemspec
 
 
-gem "minimal-mistakes-jekyll"
-
 gem "github-pages", "~> 227", group: :jekyll_plugins
 
 group :jekyll_plugins do
