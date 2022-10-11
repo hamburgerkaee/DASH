@@ -16,11 +16,17 @@ title                    : "DASH Lab"
 title_separator          : "-"
 name                     : &name "Kenji Ono"
 description              : &description "Data Science and High-Performance Computing Laboratory"
-url                      : "http://mercury.cc.kyushu-u.ac.jp"
-url                      : "http://dash.localhost:8080"
+url                      : #"http://mercury.cc.kyushu-u.ac.jp"
+url                      : #"http://dash.localhost:8080"
+#*** uncommented for testing on github by kaede, above two lines ***
+
+url                      : "https://hamburgerkaee.github.io"  # added for testing on github by kaede
+
 # baseurl                  : # the subpath of your site, e.g. "/blog"
 baseurl                  : #
-repository               : "riit-ku/dash"
+baseurl                  : "/DASH" # added for testing on github by kaede
+  
+repository               : #"riit-ku/dash" ***uncommented for testing on github by kaede
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
