@@ -24,7 +24,7 @@ url                      : "https://hamburgerkaee.github.io"  # added for testin
 
 # baseurl                  : # the subpath of your site, e.g. "/blog"
 baseurl                  : #
-baseurl                  : "/DASH" # added for testing on github by kaede
+baseurl                  : "/DASH/" # added for testing on github by kaede
   
 repository               : #"riit-ku/dash" ***uncommented for testing on github by kaede
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
