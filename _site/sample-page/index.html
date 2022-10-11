@@ -18,7 +18,7 @@
 <meta property="og:locale" content="ja_JP">
 <meta property="og:site_name" content="DASH Lab">
 <meta property="og:title" content="Sample Page">
-<meta property="og:url" content="http://localhost:4000/sample-page/">
+<meta property="og:url" content="http://localhost:4000/DASH/sample-page/">
 
 
 
@@ -38,7 +38,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/sample-page/">
+<link rel="canonical" href="http://localhost:4000/DASH/sample-page/">
 
 
 
@@ -51,7 +51,7 @@
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Kenji Ono",
-      "url": "http://localhost:4000",
+      "url": "http://localhost:4000/DASH",
       "sameAs": ["https://twitter.com/mmistakes","https://facebook.com/michaelrose"]
     }
   </script>
@@ -65,7 +65,7 @@
 <!-- end _includes/seo.html -->
 
 
-<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="DASH Lab Feed">
+<link href="/DASH/feed.xml" type="application/atom+xml" rel="alternate" title="DASH Lab Feed">
 
 <!-- https://t.co/dKP3o1e -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -75,7 +75,7 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/DASH/assets/css/main.css">
 
 <!--[if IE ]>
   <style>
@@ -115,27 +115,27 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         
-        <a class="site-title" href="/">DASH Lab</a>
+        <a class="site-title" href="/DASH/">DASH Lab</a>
         <ul class="visible-links"><li class="masthead__menu-item">
-              <a href="/teaching/" >Teaching</a>
+              <a href="/DASH/teaching/" >Teaching</a>
             </li><li class="masthead__menu-item">
-              <a href="/project/" >Projects</a>
+              <a href="/DASH/project/" >Projects</a>
             </li><li class="masthead__menu-item">
-              <a href="/publication/" >Publication</a>
+              <a href="/DASH/publication/" >Publication</a>
             </li><li class="masthead__menu-item">
-              <a href="/software/" >Software</a>
+              <a href="/DASH/software/" >Software</a>
             </li><li class="masthead__menu-item">
-              <a href="/our_lab/" >Our Lab.</a>
+              <a href="/DASH/our_lab/" >Our Lab.</a>
             </li><li class="masthead__menu-item">
-              <a href="/member/" >Member</a>
+              <a href="/DASH/member/" >Member</a>
             </li><li class="masthead__menu-item">
-              <a href="/gallary/" >Gallary</a>
+              <a href="/DASH/gallary/" >Gallary</a>
             </li><li class="masthead__menu-item">
-              <a href="/year-archive/" >Sample Posts</a>
+              <a href="/DASH/year-archive/" >Sample Posts</a>
             </li><li class="masthead__menu-item">
-              <a href="/collection-archive/" >Sample Collections</a>
+              <a href="/DASH/collection-archive/" >Sample Collections</a>
             </li><li class="masthead__menu-item">
-              <a href="/sitemap/" >Sitemap</a>
+              <a href="/DASH/sitemap/" >Sitemap</a>
             </li></ul>
         
         <button class="search__toggle" type="button">
@@ -268,7 +268,7 @@
       
     
 
-    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    <li><a href="/DASH/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
   </ul>
 </div>
 
@@ -278,7 +278,7 @@
     </div>
 
     
-  <script src="/assets/js/main.min.js"></script>
+  <script src="/DASH/assets/js/main.min.js"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
 
 
@@ -309,7 +309,7 @@ const hitTemplate = function(hit) {
   return `
     <div class="list__item">
       <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-        <h2 class="archive__item-title" itemprop="headline"><a href="${url}">${title}</a></h2>
+        <h2 class="archive__item-title" itemprop="headline"><a href="/DASH${url}">${title}</a></h2>
         <div class="archive__item-excerpt" itemprop="description">${content}</div>
       </article>
     </div>
