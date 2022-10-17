@@ -53,7 +53,7 @@
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Kenji Ono",
-      "url": "http://localhost:4000/DASH",
+      "url": "http://localhost:4000/DASH/",
       "sameAs": ["https://twitter.com/mmistakes","https://facebook.com/michaelrose"]
     }
   </script>
@@ -598,7 +598,7 @@ const hitTemplate = function(hit) {
   return `
     <div class="list__item">
       <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-        <h2 class="archive__item-title" itemprop="headline"><a href="/DASH${url}">${title}</a></h2>
+        <h2 class="archive__item-title" itemprop="headline"><a href="/DASH/${url}">${title}</a></h2>
         <div class="archive__item-excerpt" itemprop="description">${content}</div>
       </article>
     </div>
