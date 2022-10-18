@@ -9,7 +9,7 @@ feature_row1:
     alt: "placeholder image 1"
     title: "Finding Governing Equations from Data"
     excerpt: '観測や実験、シミュレーションなどのデータから、そのデータを記述する方程式を推定する研究です。可視化と同様に、現象のモデリングや理解に役立ちます。'
-    url: "#test-link"
+    url: "/our_lab/equation_discovery/"
     btn_label: "Read More"
     btn_class: "btn--primary"
     
