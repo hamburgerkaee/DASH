@@ -8,6 +8,12 @@ toc: true
 
 - カリキュラムの詳細は[moodle](https://moodle.s.kyushu-u.ac.jp/login/index.php)で確認
 
+## 2022
+
+## 2021
+
+## 2020
+
 ## 2019
 
 ### 高性能並列計算法特論
