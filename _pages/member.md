@@ -26,8 +26,24 @@ toc: true
 
 - 安藤 末子 (Sueko Ando)
 
+### Doctor
+-  (Daisuke Aketo)
+-  (Satoshi Ito)
+-  (Naoyuki Sogo)
+- 藤井 彬人 (Akito Fujii)
+- 劉 立坤 (Ryu Likun)
+
 ## 2022
-coming soon!
+学年 | 　
+:---:|:---
+M2 | 斉 済 (Qi Ji)
+M2 | 謝 施遥 (Xie Shiyo)
+M1 | 嬉野 公亮 (Kousuke Ureshino)
+M1 | 寺﨑 楓 (Kaede Terasaki)
+   | 下堂薗 駿 ( Shimodouzono)
+B4 | 武末 輝大 ( Takematsu)
+B4 | 萩原 拓海 (Takumi Hagiwara)
+
 
 ## 2021
 coming soon!
