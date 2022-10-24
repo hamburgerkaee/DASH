@@ -27,6 +27,7 @@ toc: true
 - 安藤 末子 (Sueko Ando)
 
 ### Doctor
+
 -  (Daisuke Aketo)
 -  (Satoshi Ito)
 -  (Naoyuki Sogo)
@@ -34,6 +35,7 @@ toc: true
 - 劉 立坤 (Ryu Likun)
 
 ## 2022
+
 学年 | 　
 :---:|:---
 M2 | 斉 済 (Qi Ji)
