@@ -9,38 +9,38 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Edge Case: Nested and Mixed Lists - DASH Lab</title>
-<meta name="description" content="Nested and mixed lists are an interesting beast. It’s a corner case to make sure that">
+<!-- begin _includes/seo.html --><title>second post! - DASH Lab</title>
+<meta name="description" content="前回に引き続き、markdownのお勉強をします。参考：Qiita-Markdown記法　チートシート">
 
 
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:site_name" content="DASH Lab">
-<meta property="og:title" content="Edge Case: Nested and Mixed Lists">
-<meta property="og:url" content="http://localhost:4000/DASH/edge%20case/edge-case-nested-and-mixed-lists/">
+<meta property="og:title" content="second post!">
+<meta property="og:url" content="http://localhost:4000/DASH/markdown2/">
 
 
-  <meta property="og:description" content="Nested and mixed lists are an interesting beast. It’s a corner case to make sure that">
-
-
-
-
-
-
-
-  <meta property="article:published_time" content="2009-05-15T00:00:00+09:00">
+  <meta property="og:description" content="前回に引き続き、markdownのお勉強をします。参考：Qiita-Markdown記法　チートシート">
 
 
 
 
 
-  
+
+
+  <meta property="article:published_time" content="2022-10-26T00:00:00+09:00">
+
+
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://localhost:4000/DASH/edge%20case/edge-case-nested-and-mixed-lists/">
+
+<link rel="canonical" href="http://localhost:4000/DASH/markdown2/">
 
 
 
@@ -104,7 +104,7 @@
 
   </head>
 
-  <body class="layout--single">
+  <body class="layout--posts">
 
     <!--[if lt IE 9]>
 <div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
@@ -272,229 +272,287 @@
   </div>
 
 
-  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Edge Case: Nested and Mixed Lists">
-    <meta itemprop="description" content="Nested and mixed lists are an interesting beast. It’s a corner case to make sure that">
-    <meta itemprop="datePublished" content="May 15, 2009">
+  <div class="archive">
     
+      <h1 id="page-title" class="page__title">second post!</h1>
+    
+    <p>前回に引き続き、markdownのお勉強をします。参考：Qiita-Markdown記法　チートシート</p>
 
-    <div class="page__inner-wrap">
-      
-        <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Edge Case: Nested and Mixed Lists
-</h1>
-          
-            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+<p>せっかくなので前回学んだことを使いながらやってみましょう。コンテンツを順序付きリストで始めます。</p>
 
-
-
-
-  less than 1 minute read
-</p>
-          
-        </header>
-      
-
-      <section class="page__content" itemprop="text">
-        
-        <p>Nested and mixed lists are an interesting beast. It’s a corner case to make sure that</p>
+<ol>
+  <li>Code blocks - コードブロック</li>
+</ol>
 
 <ul>
-  <li>Lists within lists do not break the ordered list numbering order</li>
-  <li>Your list styles go deep enough.</li>
+  <li>コードをファイル名を付けて投稿したい場合は、バッククォート(`)かチルダ(~)を以下のように使用することでシンタックスハイライト（コードの一部分を色付けしたり、おなじ関数やタグを色分けする）が適用される。</li>
 </ul>
 
-<h3 id="ordered--unordered--ordered">Ordered – Unordered – Ordered</h3>
+<p><strong>例</strong></p>
 
-<ol>
-  <li>ordered item</li>
-  <li>ordered item
-    <ul>
-      <li><strong>unordered</strong></li>
-      <li><strong>unordered</strong>
-        <ol>
-          <li>ordered item</li>
-          <li>ordered item</li>
-        </ol>
-      </li>
-    </ul>
-  </li>
-  <li>ordered item</li>
-  <li>ordered item</li>
-</ol>
+<p>```python:homepage.py</p>
 
-<h3 id="ordered--unordered--unordered">Ordered – Unordered – Unordered</h3>
+<p>print(“This is a landing page.”)</p>
 
-<ol>
-  <li>ordered item</li>
-  <li>ordered item
-    <ul>
-      <li><strong>unordered</strong></li>
-      <li><strong>unordered</strong>
-        <ul>
-          <li>unordered item</li>
-          <li>unordered item</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>ordered item</li>
-  <li>ordered item</li>
-</ol>
+<p>```</p>
 
-<h3 id="unordered--ordered--unordered">Unordered – Ordered – Unordered</h3>
+<p><strong>結果</strong></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="k">print</span><span class="p">(</span><span class="s">"This is a landing page."</span><span class="p">)</span>
+
+</code></pre></div></div>
 
 <ul>
-  <li>unordered item</li>
-  <li>unordered item
+  <li>
+    <p>頭から半角スペースを4つ空けるとコードブロックが開始される。他のコンテンツと異なり、コードブロックでは改行してもおなじコードブロックの中から出られない。しかし、頭にキャレット(\^)を付けることでコードブロックを別にすることができる。<br />
+リストの後にコードブロックを入れるときはチルダを入れないと反映されない。</p>
+  </li>
+</ul>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Here comes some code
+
+This text belongs to the same code block.
+
+
+Here comes some code
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This one is separate.
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p>Using a tab to indent this line, the tab only counts as three spaces and therefore the overall indentation is four spaces.</p>
+
     <ol>
-      <li>ordered</li>
-      <li>ordered
-        <ul>
-          <li>unordered item</li>
-          <li>unordered item</li>
-        </ul>
-      </li>
+      <li>The tab after the marker counts here as three spaces. Since the indentation of the marker is three spaces and the marker itself takes two characters, the overall indentation needed for the following lines is eight spaces or two tabs.</li>
     </ol>
   </li>
-  <li>unordered item</li>
-  <li>unordered item</li>
+  <li>
+    <p>First item</p>
+
+    <p>A second paragraph</p>
+
+    <ul>
+      <li>nested list</li>
+    </ul>
+
+    <blockquote>
+      <p>blockquote</p>
+    </blockquote>
+  </li>
+  <li>
+    <p>Second item</p>
+  </li>
 </ul>
 
-<h3 id="unordered--unordered--ordered">Unordered – Unordered – Ordered</h3>
+<p><strong>リストに続くコードブロック</strong></p>
 
 <ul>
-  <li>unordered item</li>
-  <li>unordered item
-    <ul>
-      <li>unordered</li>
-      <li>unordered
-        <ol>
-          <li><strong>ordered item</strong></li>
-          <li><strong>ordered item</strong></li>
-        </ol>
-      </li>
-    </ul>
+  <li>
+    <p>This is a list item.</p>
+
+    <p>The second para of the list item.</p>
   </li>
-  <li>unordered item</li>
-  <li>unordered item</li>
 </ul>
 
-<h3 id="task-lists">Task Lists</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A code block following the list item.
+</code></pre></div></div>
 
-<ul class="task-list">
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Finish my changes</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Push my commits to GitHub</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Open a pull request</li>
+<ul>
+  <li>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This is a code block (indentation needs to be 4 + 4)
+
+spaces(tabs).
+</code></pre></div>    </div>
+  </li>
 </ul>
 
+<ol>
+  <li>定義リスト</li>
+</ol>
+
+<dl>
+  <dt>kramdown</dt>
+  <dd>
+    <p>A Markdown-superset converter</p>
+  </dd>
+  <dt>Maruku</dt>
+  <dd>
+    <p>Another Markdown-superset converter</p>
+  </dd>
+</dl>
+
+<ol>
+  <li>表</li>
+</ol>
+
+<p>一行目のパイプは無視される<br />
+表中の行間にblank line（空行）を入れると認識されない？</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Default aligned</th>
+      <th style="text-align: left">Left aligned</th>
+      <th style="text-align: center">Center aligned</th>
+      <th style="text-align: right">Right aligned</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>First body part</td>
+      <td style="text-align: left">Second cell</td>
+      <td style="text-align: center">Third cell</td>
+      <td style="text-align: right">fourth cell</td>
+    </tr>
+    <tr>
+      <td>Second line</td>
+      <td style="text-align: left">foo</td>
+      <td style="text-align: center"><strong>strong</strong></td>
+      <td style="text-align: right">baz</td>
+    </tr>
+    <tr>
+      <td>Third line</td>
+      <td style="text-align: left">quux</td>
+      <td style="text-align: center">baz</td>
+      <td style="text-align: right">bar</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>Second body</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: right"> </td>
+    </tr>
+    <tr>
+      <td>2 line</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: right"> </td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Footer row</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: right"> </td>
+    </tr>
+  </tfoot>
+</table>
+
+<p>上の表は簡略化して書くこともできる。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Default aligned</th>
+      <th style="text-align: left">Left aligned</th>
+      <th style="text-align: center">Center aligned</th>
+      <th style="text-align: right">Right aligned</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>First body part</td>
+      <td style="text-align: left">Second cell</td>
+      <td style="text-align: center">Third cell</td>
+      <td style="text-align: right">fourth cell</td>
+    </tr>
+    <tr>
+      <td>Second line</td>
+      <td style="text-align: left">foo</td>
+      <td style="text-align: center"><strong>strong</strong></td>
+      <td style="text-align: right">baz</td>
+    </tr>
+    <tr>
+      <td>Third line</td>
+      <td style="text-align: left">quux</td>
+      <td style="text-align: center">baz</td>
+      <td style="text-align: right">bar</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>Second body</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: right"> </td>
+    </tr>
+    <tr>
+      <td>2 line</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: right"> </td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Footer row</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: right"> </td>
+    </tr>
+  </tfoot>
+</table>
+
+<ol>
+  <li>数式</li>
+</ol>
+
+<p>数式はダラー記号2つ($$)で始まり、終わる</p>
+
+<p>LaTeX数式で記述する</p>
+
+\[\begin{aligned}
+  &amp; \phi(x, y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
+  = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
+  &amp; (x_1, \ldots, x_n) \left( \begin{array}{ccc}
+	\phi(e_1, e_1) &amp; \cdots &amp;\phi(e_1, e_n) \\
+	\vdots &amp; \ddots &amp; \vdots \\
+	\phi(e_n, e_1) &amp; \cdots &amp;phi(e_n, e_n)
+	\end{array} \right)
+  \left( \begin{array}{c}
+	y_1 \\
+	\vdots \\
+	y_n
+	\end{array} \right)
+\end{aligned}\]
+
+<p>うまくいかない….</p>
+
+
+
+<ul class="taxonomy__index">
+  
+  
+    <li>
+      <a href="#2022">
+        <strong>2022</strong> <span class="taxonomy__count">2</span>
+      </a>
+    </li>
+  
+    <li>
+      <a href="#2009">
+        <strong>2009</strong> <span class="taxonomy__count">1</span>
+      </a>
+    </li>
+  
+</ul>
+
+
+
+  <section id="2022" class="taxonomy__section">
+    <h2 class="archive__subtitle">2022</h2>
+    <div class="entries-list">
+      
         
-      </section>
-
-      <footer class="page__meta">
-        
-        
-  
-
-
-  
-  
-  
-
-  <p class="page__taxonomy">
-    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
-    <span itemprop="keywords">
-    
-      
-      
-      <a href="/DASH/tags/#content" class="page__taxonomy-item" rel="tag">content</a><span class="sep">, </span>
-    
-      
-      
-      <a href="/DASH/tags/#css" class="page__taxonomy-item" rel="tag">css</a><span class="sep">, </span>
-    
-      
-      
-      <a href="/DASH/tags/#edge-case" class="page__taxonomy-item" rel="tag">edge case</a><span class="sep">, </span>
-    
-      
-      
-      <a href="/DASH/tags/#lists" class="page__taxonomy-item" rel="tag">lists</a><span class="sep">, </span>
-    
-      
-      
-      <a href="/DASH/tags/#markup" class="page__taxonomy-item" rel="tag">markup</a>
-    
-    </span>
-  </p>
 
 
 
-
-  
-
-
-  
-  
-  
-
-  <p class="page__taxonomy">
-    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
-    <span itemprop="keywords">
-    
-      
-      
-      <a href="/DASH/categories/#edge-case" class="page__taxonomy-item" rel="tag">Edge Case</a>
-    
-    </span>
-  </p>
-
-
-        
-          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2009-05-15T00:00:00+09:00">May 15, 2009</time></p>
-        
-      </footer>
-
-      <section class="page__share">
-  
-    <h4 class="page__share-title">Share on</h4>
-  
-
-  <a href="https://twitter.com/intent/tweet?text=Edge+Case%3A+Nested+and+Mixed+Lists%20http%3A%2F%2Flocalhost%3A4000%2FDASH%2Fedge%2520case%2Fedge-case-nested-and-mixed-lists%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
-
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2FDASH%2Fedge%2520case%2Fedge-case-nested-and-mixed-lists%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
-
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2FDASH%2Fedge%2520case%2Fedge-case-nested-and-mixed-lists%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
-</section>
-
-
-      
-  <nav class="pagination">
-    
-      <a href="#" class="pagination--pager disabled">Previous</a>
-    
-    
-      <a href="/DASH/markdown1/" class="pagination--pager" title="First posting!
-">Next</a>
-    
-  </nav>
-
-    </div>
-
-    
-  </article>
-
-  
-  
-    <div class="page__related">
-      <h4 class="page__related-title">You may also enjoy</h4>
-      <div class="grid__wrapper">
-        
-          
-
-
-
-<div class="grid__item">
+<div class="list__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
     <h2 class="archive__item-title" itemprop="headline">
@@ -518,12 +576,12 @@
   </article>
 </div>
 
+      
         
-          
 
 
 
-<div class="grid__item">
+<div class="list__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
     <h2 class="archive__item-title" itemprop="headline">
@@ -547,13 +605,51 @@
   </article>
 </div>
 
-        
-      </div>
+      
     </div>
-  
-  
+    <a href="#page-title" class="back-to-top">Back to top &uarr;</a>
+  </section>
+
+  <section id="2009" class="taxonomy__section">
+    <h2 class="archive__subtitle">2009</h2>
+    <div class="entries-list">
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/DASH/edge%20case/edge-case-nested-and-mixed-lists/" rel="permalink">Edge Case: Nested and Mixed Lists
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Nested and mixed lists are an interesting beast. It’s a corner case to make sure that
+
+</p>
+  </article>
 </div>
 
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to top &uarr;</a>
+  </section>
+
+
+  </div>
+</div>
       <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <div align="center" style="margin: 1em 0;">
         <ins class="adsbygoogle"

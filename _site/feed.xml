@@ -1,4 +1,415 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/DASH/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/DASH/" rel="alternate" type="text/html" /><updated>2022-10-24T18:01:54+09:00</updated><id>http://localhost:4000/DASH/feed.xml</id><title type="html">DASH Lab</title><subtitle>Data Science and High-Performance Computing Laboratory</subtitle><author><name>Kenji Ono</name></author><entry><title type="html">Edge Case: Nested and Mixed Lists</title><link href="http://localhost:4000/DASH/edge%20case/edge-case-nested-and-mixed-lists/" rel="alternate" type="text/html" title="Edge Case: Nested and Mixed Lists" /><published>2009-05-15T00:00:00+09:00</published><updated>2009-05-15T00:00:00+09:00</updated><id>http://localhost:4000/DASH/edge%20case/edge-case-nested-and-mixed-lists</id><content type="html" xml:base="http://localhost:4000/DASH/edge%20case/edge-case-nested-and-mixed-lists/">&lt;p&gt;Nested and mixed lists are an interesting beast. It’s a corner case to make sure that&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/DASH/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/DASH/" rel="alternate" type="text/html" /><updated>2022-10-26T17:19:13+09:00</updated><id>http://localhost:4000/DASH/feed.xml</id><title type="html">DASH Lab</title><subtitle>Data Science and High-Performance Computing Laboratory</subtitle><author><name>Kenji Ono</name></author><entry><title type="html">second post!</title><link href="http://localhost:4000/DASH/markdown2/" rel="alternate" type="text/html" title="second post!" /><published>2022-10-26T00:00:00+09:00</published><updated>2022-10-26T00:00:00+09:00</updated><id>http://localhost:4000/DASH/markdown2</id><content type="html" xml:base="http://localhost:4000/DASH/markdown2/">&lt;p&gt;前回に引き続き、markdownのお勉強をします。参考：Qiita-Markdown記法　チートシート&lt;/p&gt;
+
+&lt;p&gt;せっかくなので前回学んだことを使いながらやってみましょう。コンテンツを順序付きリストで始めます。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Code blocks - コードブロック&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;コードをファイル名を付けて投稿したい場合は、バッククォート(`)かチルダ(~)を以下のように使用することでシンタックスハイライト（コードの一部分を色付けしたり、おなじ関数やタグを色分けする）が適用される。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;例&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;```python:homepage.py&lt;/p&gt;
+
+&lt;p&gt;print(“This is a landing page.”)&lt;/p&gt;
+
+&lt;p&gt;```&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;結果&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;This is a landing page.&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;頭から半角スペースを4つ空けるとコードブロックが開始される。他のコンテンツと異なり、コードブロックでは改行してもおなじコードブロックの中から出られない。しかし、頭にキャレット(\^)を付けることでコードブロックを別にすることができる。&lt;br /&gt;
+リストの後にコードブロックを入れるときはチルダを入れないと反映されない。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Here comes some code
+
+This text belongs to the same code block.
+
+
+Here comes some code
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;This one is separate.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Using a tab to indent this line, the tab only counts as three spaces and therefore the overall indentation is four spaces.&lt;/p&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;The tab after the marker counts here as three spaces. Since the indentation of the marker is three spaces and the marker itself takes two characters, the overall indentation needed for the following lines is eight spaces or two tabs.&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;First item&lt;/p&gt;
+
+    &lt;p&gt;A second paragraph&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;nested list&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;blockquote&gt;
+      &lt;p&gt;blockquote&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Second item&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;リストに続くコードブロック&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;This is a list item.&lt;/p&gt;
+
+    &lt;p&gt;The second para of the list item.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;A code block following the list item.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;This is a code block (indentation needs to be 4 + 4)
+
+spaces(tabs).
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;定義リスト&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;kramdown&lt;/dt&gt;
+  &lt;dd&gt;
+    &lt;p&gt;A Markdown-superset converter&lt;/p&gt;
+  &lt;/dd&gt;
+  &lt;dt&gt;Maruku&lt;/dt&gt;
+  &lt;dd&gt;
+    &lt;p&gt;Another Markdown-superset converter&lt;/p&gt;
+  &lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;表&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;一行目のパイプは無視される&lt;br /&gt;
+表中の行間にblank line（空行）を入れると認識されない？&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Default aligned&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Left aligned&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Center aligned&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Right aligned&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;First body part&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Second cell&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Third cell&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;fourth cell&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Second line&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;foo&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;strong&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;baz&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Third line&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;quux&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;baz&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;bar&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Second body&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2 line&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tfoot&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Footer row&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tfoot&gt;
+&lt;/table&gt;
+
+&lt;p&gt;上の表は簡略化して書くこともできる。&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Default aligned&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Left aligned&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Center aligned&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Right aligned&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;First body part&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Second cell&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Third cell&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;fourth cell&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Second line&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;foo&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;strong&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;baz&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Third line&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;quux&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;baz&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;bar&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Second body&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2 line&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tfoot&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Footer row&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tfoot&gt;
+&lt;/table&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;数式&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;数式はダラー記号2つ($$)で始まり、終わる&lt;/p&gt;
+
+&lt;p&gt;LaTeX数式で記述する&lt;/p&gt;
+
+\[\begin{aligned}
+  &amp;amp; \phi(x, y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
+  = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
+  &amp;amp; (x_1, \ldots, x_n) \left( \begin{array}{ccc}
+	\phi(e_1, e_1) &amp;amp; \cdots &amp;amp;\phi(e_1, e_n) \\
+	\vdots &amp;amp; \ddots &amp;amp; \vdots \\
+	\phi(e_n, e_1) &amp;amp; \cdots &amp;amp;phi(e_n, e_n)
+	\end{array} \right)
+  \left( \begin{array}{c}
+	y_1 \\
+	\vdots \\
+	y_n
+	\end{array} \right)
+\end{aligned}\]
+
+&lt;p&gt;うまくいかない….&lt;/p&gt;</content><author><name>Kenji Ono</name></author><summary type="html">前回に引き続き、markdownのお勉強をします。参考：Qiita-Markdown記法　チートシート</summary></entry><entry><title type="html">First posting!</title><link href="http://localhost:4000/DASH/markdown1/" rel="alternate" type="text/html" title="First posting!" /><published>2022-10-25T00:00:00+09:00</published><updated>2022-10-25T00:00:00+09:00</updated><id>http://localhost:4000/DASH/markdown1</id><content type="html" xml:base="http://localhost:4000/DASH/markdown1/">&lt;p&gt;markdown practice&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Header&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&quot;小野研究室のhp&quot;&gt;小野研究室のHP&lt;/h1&gt;
+&lt;h2 id=&quot;小野研究室のhp-1&quot;&gt;小野研究室のHP&lt;/h2&gt;
+&lt;h3 id=&quot;小野研究室のhp-2&quot;&gt;小野研究室のHP&lt;/h3&gt;
+&lt;h4 id=&quot;小野研究室のhp-3&quot;&gt;小野研究室のHP&lt;/h4&gt;
+&lt;h5 id=&quot;小野研究室のhp-4&quot;&gt;小野研究室のHP&lt;/h5&gt;
+
+&lt;p&gt;&lt;strong&gt;unordered list&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;アスタリスク”*”をつけることで&lt;/li&gt;
+  &lt;li&gt;箇条書きができる&lt;/li&gt;
+  &lt;li&gt;半角スペース必須&lt;/li&gt;
+  &lt;li&gt;スペース”-“でも&lt;/li&gt;
+  &lt;li&gt;おなじことができる&lt;/li&gt;
+  &lt;li&gt;半角スペース必須&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;ordered list&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;数字＋ピリオドの後に書いた文は&lt;/li&gt;
+  &lt;li&gt;番号が振られた順序付きリストになる&lt;/li&gt;
+  &lt;li&gt;ピリオドの後に半角スペース必須&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;check box&lt;/strong&gt;&lt;br /&gt;
+ハイフン「-」と半角かっこ[]でチェックボックスを作れる&lt;br /&gt;
+チェック済みは[]の中にxを入れる&lt;br /&gt;
+ハイフンとかっこの間、かっこの中、かっことラベルの間には半角スペース必須&lt;/p&gt;
+
+&lt;ul class=&quot;task-list&quot;&gt;
+  &lt;li&gt;性別&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;男&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;女&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;水平線&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;hr /&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;表&lt;/strong&gt;&lt;br /&gt;
+縦棒(vertical bar)をうまく使うと表が作れる &lt;br /&gt;
+縦棒を列でそろえるとうまくいく、縦棒の左右はコロンか半角スペース&lt;br /&gt;
+改行を挟むとうまくいかない&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Item&lt;/th&gt;
+      &lt;th&gt;Value&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Computer&lt;/td&gt;
+      &lt;td&gt;$1600&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Phone&lt;/td&gt;
+      &lt;td&gt;$12&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Pipe&lt;/td&gt;
+      &lt;td&gt;$1&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;左揃え&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;中央揃え&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;右揃え&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;align-left&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;align-center&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;align-right&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;strong&gt;文字装飾&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;強調表示&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;文中で &lt;strong&gt;太字&lt;/strong&gt; にしたいところがあれば、「*」2個ではさむ&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;斜体&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;文中で_斜め表記_したいところがあれば、「*」1個ではさむ&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;test&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Test&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;メイリオなど、一部のフォントには対応していないらしい&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;取り消し線&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;文字を取り消すときは「~」2個ではさむ&lt;/p&gt;
+
+&lt;p&gt;&lt;del&gt;取り消したい文字&lt;/del&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;リンク&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;“&lt;a href=&quot;URL&quot;&gt;リンクテキスト&lt;/a&gt;“と入力することで、[]内に入力した文章を指定したＵＲＬへリンクできるようになる&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Googleへのリンク&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.google.com\?hl=ja&quot;&gt;Google&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;図へのリンク&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;![picture](URL)のように書く&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;引用表現&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;引用元の前に「&amp;gt;」を入力すると引用表現ができる&lt;/p&gt;
+
+&lt;p&gt;”&amp;gt; 小野研究室”と入力すると、&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;小野研究室&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;となる。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;改行&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;改行には3種類の方法がある&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;末尾に半角スペースを2つつける&lt;/li&gt;
+  &lt;li&gt;1行空白の行を空ける&lt;/li&gt;
+  &lt;li&gt;&amp;lt;br&amp;gt;タグを使う&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;マークダウンエスケープ&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;「\」円マーク/バックスラッシュをMarkdownの前に付けると無向化することができる。&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;\#見出しh1&lt;/p&gt;
+
+&lt;p&gt;とすると、&lt;/p&gt;
+
+&lt;p&gt;#見出しh1&lt;/p&gt;
+
+&lt;p&gt;となる&lt;/p&gt;</content><author><name>Kenji Ono</name></author><summary type="html">markdown practice</summary></entry><entry><title type="html">Edge Case: Nested and Mixed Lists</title><link href="http://localhost:4000/DASH/edge%20case/edge-case-nested-and-mixed-lists/" rel="alternate" type="text/html" title="Edge Case: Nested and Mixed Lists" /><published>2009-05-15T00:00:00+09:00</published><updated>2009-05-15T00:00:00+09:00</updated><id>http://localhost:4000/DASH/edge%20case/edge-case-nested-and-mixed-lists</id><content type="html" xml:base="http://localhost:4000/DASH/edge%20case/edge-case-nested-and-mixed-lists/">&lt;p&gt;Nested and mixed lists are an interesting beast. It’s a corner case to make sure that&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Lists within lists do not break the ordered list numbering order&lt;/li&gt;
