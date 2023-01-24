@@ -77,7 +77,7 @@ search_provider          : algolia # lunr (default), algolia
 algolia:
   application_id         : IVW6THJR2G # YOUR_APPLICATION_ID
   index_name             : DASH # YOUR_INDEX_NAME
-  search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
+  search_only_api_key    : 836a385edbe4452772a9b5359a804219 # YOUR_SEARCH_ONLY_API_KEY
   powered_by             : # true (default), false
   files_to_exclude:
     #- _posts/2017-11-28-post-exclude-search.md
