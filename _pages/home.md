@@ -10,4 +10,4 @@ excerpt: >
   **Data Science and HPC Research and more**.<br />
 ---
 
-- Renewal of this homepage 2019-05-12
+Renewal of this homepage 2019-05-12

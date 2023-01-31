@@ -101,7 +101,9 @@
   .archive__item-title {
     margin-top: 0;
   }
-
+  .archive__item-headings{
+   margin-top: 0;
+  }
   .archive__item-excerpt {
     margin-bottom: 0;
   }
@@ -115,6 +117,11 @@
 }
 
 .archive__item-title .ais-Highlight {
+  color: $primary-color;
+  font-style: normal;
+  text-decoration: underline;
+}
+.archive__item-headings{
   color: $primary-color;
   font-style: normal;
   text-decoration: underline;

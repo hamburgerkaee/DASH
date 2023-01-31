@@ -75,13 +75,21 @@ search_full_content      : true # true, false (default)
 search_provider          : algolia # lunr (default), algolia
 
 algolia:
+  settings:
+    searchableAttributes:
+      - unordered(title)
+      - unordered(headings)
+      - unordered(content)
+      - collection,categories,tags
+    unretrievableAttributes: []
+    distinct: false
+    attributeForDistinct :
   application_id         : IVW6THJR2G # YOUR_APPLICATION_ID
   index_name             : DASH # YOUR_INDEX_NAME
   search_only_api_key    : 836a385edbe4452772a9b5359a804219 # YOUR_SEARCH_ONLY_API_KEY
   powered_by             : # true (default), false
-  files_to_exclude:
-    #- _posts/2017-11-28-post-exclude-search.md
-
+  files_to_exclude: #
+    
 # SEO Related
 google_site_verification : # Replace this with your ID, or delete
 bing_site_verification   :
