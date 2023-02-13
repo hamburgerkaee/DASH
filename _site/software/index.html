@@ -294,11 +294,19 @@ const hitTemplate = function(hit) {
   const content = hit._highlightResult.html.value;
   const headings = hit._highlightResult.headings;
 
+  let breadcrumbs = '';
+  if (headings){
+    breadcrumbs = headings.map(match => {
+      return `<span class="post-breadcrumb">${match.value}</span>`
+    })
+  }
+
+
   return `
     <div class="list__item">
       <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-        <h2 class="archive__item-title" itemprop="headline"><a href="/DASH/${url}">${title}</a></h2>
-        <span class="archive__item-headings" itemprop="name"><a href="/DASH/${url}">${headings}</a></span>
+       <h2 class="archive__item-title" itemprop="headline"><a href="/DASH/${url}">${title}</a></h2>
+       <a href="/DASH/${url}" class="post-breadcrumbs">${breadcrumbs}</a>
         <div class="archive__item-excerpt" itemprop="description">${content}</div>
       </article>
     </div>
@@ -325,6 +333,26 @@ search.addWidget(
 // Starting the search
 search.start();
 </script>
+
+<style>
+.post-breadcrumbs {
+  color: #111;
+  font-style: normal;
+  text-decoration: underline;
+
+}
+.post-breadcrumb {
+  font-size: 18px;
+  color: #424242;
+
+}
+.post-breadcrumb .ais-Highlight {
+  font-weight: bold;
+  font-style: normal;
+
+}
+
+</style>
 
 
 
