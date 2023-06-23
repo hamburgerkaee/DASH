@@ -10,7 +10,7 @@
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html --><title>second post! - DASH Lab</title>
-<meta name="description" content="前回に引き続き、markdownのお勉強をします。参考：Qiita-Markdown記法　チートシート">
+<meta name="description" content="  前回に引き続き、markdownのお勉強をします。参考：Qiita-Markdown記法　チートシート  せっかくなので前回学んだことを使いながらやってみましょう。コンテンツを順序付きリストで始めます。">
 
 
 
@@ -21,7 +21,7 @@
 <meta property="og:url" content="http://localhost:4000/DASH/markdown2/">
 
 
-  <meta property="og:description" content="前回に引き続き、markdownのお勉強をします。参考：Qiita-Markdown記法　チートシート">
+  <meta property="og:description" content="  前回に引き続き、markdownのお勉強をします。参考：Qiita-Markdown記法　チートシート  せっかくなので前回学んだことを使いながらやってみましょう。コンテンツを順序付きリストで始めます。">
 
 
 
@@ -104,7 +104,7 @@
 
   </head>
 
-  <body class="layout--posts">
+  <body class="layout--posts_math">
 
     <!--[if lt IE 9]>
 <div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
@@ -276,17 +276,20 @@
     
       <h1 id="page-title" class="page__title">second post!</h1>
     
-    <p>前回に引き続き、markdownのお勉強をします。参考：Qiita-Markdown記法　チートシート</p>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
-<p>せっかくなので前回学んだことを使いながらやってみましょう。コンテンツを順序付きリストで始めます。</p>
+<blockquote>
+  <p>前回に引き続き、markdownのお勉強をします。参考：Qiita-Markdown記法　チートシート<br />
+  せっかくなので前回学んだことを使いながらやってみましょう。コンテンツを順序付きリストで始めます。</p>
+</blockquote>
 
 <ol>
-  <li>Code blocks - コードブロック</li>
+  <li>Code blocks - コードブロック
+    <ul>
+      <li>コードをファイル名を付けて投稿したい場合は、バッククォート(`)かチルダ(~)を以下のように使用することでシンタックスハイライト（コードの一部分を色付けしたり、おなじ関数やタグを色分けする）が適用される。</li>
+    </ul>
+  </li>
 </ol>
-
-<ul>
-  <li>コードをファイル名を付けて投稿したい場合は、バッククォート(`)かチルダ(~)を以下のように使用することでシンタックスハイライト（コードの一部分を色付けしたり、おなじ関数やタグを色分けする）が適用される。</li>
-</ul>
 
 <p><strong>例</strong></p>
 
@@ -506,22 +509,10 @@ spaces(tabs).
 
 <p>LaTeX数式で記述する</p>
 
-\[\begin{aligned}
-  &amp; \phi(x, y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
-  = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
-  &amp; (x_1, \ldots, x_n) \left( \begin{array}{ccc}
-	\phi(e_1, e_1) &amp; \cdots &amp;\phi(e_1, e_n) \\
-	\vdots &amp; \ddots &amp; \vdots \\
-	\phi(e_n, e_1) &amp; \cdots &amp;phi(e_n, e_n)
-	\end{array} \right)
-  \left( \begin{array}{c}
-	y_1 \\
-	\vdots \\
-	y_n
-	\end{array} \right)
-\end{aligned}\]
-
-<p>うまくいかない….</p>
+\[\begin{align*}
+\frac{\partial \theta}{\partial t}= \frac{\partial}{\partial z}
+\left[ K(\theta) \left (\frac{\partial \psi}{\partial z} + 1 \right) \right]\
+\end{align*}\]
 
 
 
@@ -570,7 +561,10 @@ spaces(tabs).
   1 minute read
 </p>
     
-    <p class="archive__item-excerpt" itemprop="description">前回に引き続き、markdownのお勉強をします。参考：Qiita-Markdown記法　チートシート
+    <p class="archive__item-excerpt" itemprop="description">
+  前回に引き続き、markdownのお勉強をします。参考：Qiita-Markdown記法　チートシート
+  せっかくなので前回学んだことを使いながらやってみましょう。コンテンツを順序付きリストで始めます。
+
 
 </p>
   </article>

@@ -1,14 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/DASH/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/DASH/" rel="alternate" type="text/html" /><updated>2023-02-14T17:03:35+09:00</updated><id>http://localhost:4000/DASH/feed.xml</id><title type="html">DASH Lab</title><subtitle>Data Science and High-Performance Computing Laboratory</subtitle><author><name>Kenji Ono</name></author><entry><title type="html">second post!</title><link href="http://localhost:4000/DASH/markdown2/" rel="alternate" type="text/html" title="second post!" /><published>2022-10-26T00:00:00+09:00</published><updated>2022-10-26T00:00:00+09:00</updated><id>http://localhost:4000/DASH/markdown2</id><content type="html" xml:base="http://localhost:4000/DASH/markdown2/">&lt;p&gt;前回に引き続き、markdownのお勉強をします。参考：Qiita-Markdown記法　チートシート&lt;/p&gt;
-
-&lt;p&gt;せっかくなので前回学んだことを使いながらやってみましょう。コンテンツを順序付きリストで始めます。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/DASH/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/DASH/" rel="alternate" type="text/html" /><updated>2023-06-23T17:05:57+09:00</updated><id>http://localhost:4000/DASH/feed.xml</id><title type="html">DASH Lab</title><subtitle>Data Science and High-Performance Computing Laboratory</subtitle><author><name>Kenji Ono</name></author><entry><title type="html">second post!</title><link href="http://localhost:4000/DASH/markdown2/" rel="alternate" type="text/html" title="second post!" /><published>2022-10-26T00:00:00+09:00</published><updated>2022-10-26T00:00:00+09:00</updated><id>http://localhost:4000/DASH/markdown2</id><content type="html" xml:base="http://localhost:4000/DASH/markdown2/">&lt;blockquote&gt;
+  &lt;p&gt;前回に引き続き、markdownのお勉強をします。参考：Qiita-Markdown記法　チートシート&lt;br /&gt;
+  せっかくなので前回学んだことを使いながらやってみましょう。コンテンツを順序付きリストで始めます。&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Code blocks - コードブロック&lt;/li&gt;
+  &lt;li&gt;Code blocks - コードブロック
+    &lt;ul&gt;
+      &lt;li&gt;コードをファイル名を付けて投稿したい場合は、バッククォート(`)かチルダ(~)を以下のように使用することでシンタックスハイライト（コードの一部分を色付けしたり、おなじ関数やタグを色分けする）が適用される。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ol&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;コードをファイル名を付けて投稿したい場合は、バッククォート(`)かチルダ(~)を以下のように使用することでシンタックスハイライト（コードの一部分を色付けしたり、おなじ関数やタグを色分けする）が適用される。&lt;/li&gt;
-&lt;/ul&gt;
 
 &lt;p&gt;&lt;strong&gt;例&lt;/strong&gt;&lt;/p&gt;
 
@@ -228,22 +229,10 @@ spaces(tabs).
 
 &lt;p&gt;LaTeX数式で記述する&lt;/p&gt;
 
-\[\begin{aligned}
-  &amp;amp; \phi(x, y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
-  = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
-  &amp;amp; (x_1, \ldots, x_n) \left( \begin{array}{ccc}
-	\phi(e_1, e_1) &amp;amp; \cdots &amp;amp;\phi(e_1, e_n) \\
-	\vdots &amp;amp; \ddots &amp;amp; \vdots \\
-	\phi(e_n, e_1) &amp;amp; \cdots &amp;amp;phi(e_n, e_n)
-	\end{array} \right)
-  \left( \begin{array}{c}
-	y_1 \\
-	\vdots \\
-	y_n
-	\end{array} \right)
-\end{aligned}\]
-
-&lt;p&gt;うまくいかない….&lt;/p&gt;</content><author><name>Kenji Ono</name></author><summary type="html">前回に引き続き、markdownのお勉強をします。参考：Qiita-Markdown記法　チートシート</summary></entry><entry><title type="html">First posting!</title><link href="http://localhost:4000/DASH/markdown1/" rel="alternate" type="text/html" title="First posting!" /><published>2022-10-25T00:00:00+09:00</published><updated>2022-10-25T00:00:00+09:00</updated><id>http://localhost:4000/DASH/markdown1</id><content type="html" xml:base="http://localhost:4000/DASH/markdown1/">&lt;p&gt;markdown practice&lt;/p&gt;
+\[\begin{align*}
+\frac{\partial \theta}{\partial t}= \frac{\partial}{\partial z}
+\left[ K(\theta) \left (\frac{\partial \psi}{\partial z} + 1 \right) \right]\
+\end{align*}\]</content><author><name>Kenji Ono</name></author><summary type="html">前回に引き続き、markdownのお勉強をします。参考：Qiita-Markdown記法　チートシート せっかくなので前回学んだことを使いながらやってみましょう。コンテンツを順序付きリストで始めます。</summary></entry><entry><title type="html">First posting!</title><link href="http://localhost:4000/DASH/markdown1/" rel="alternate" type="text/html" title="First posting!" /><published>2022-10-25T00:00:00+09:00</published><updated>2022-10-25T00:00:00+09:00</updated><id>http://localhost:4000/DASH/markdown1</id><content type="html" xml:base="http://localhost:4000/DASH/markdown1/">&lt;p&gt;markdown practice&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Header&lt;/strong&gt;&lt;/p&gt;
 &lt;h1 id=&quot;小野研究室のhp&quot;&gt;小野研究室のHP&lt;/h1&gt;
